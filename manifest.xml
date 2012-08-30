@@ -6,24 +6,32 @@
   <remote  name="isee"
            fetch="git://git.isee.biz/pub/scm"
            review="" />
+  <remote  name="github"
+           fetch="git://github.com/mbgg"
+           review="" />
   <default revision="rowboat-ics"
            remote="rowboat" />
 
-  <project path="build" name="android/build" remote="isee" revision="rowboat-ics">
+  <project path="build" name="android-build" remote="github" revision="master">
     <copyfile src="core/root.mk" dest="Makefile" />
     <copyfile src="README" dest="README" />
   </project>
+  <project path="device/ti/igep00x0" name="android-device-ti-igep00x0" remote="github" revision="dsp-dev" />
+  <project path="hardware/libhardware" name="android-hardware-libhardware" remote="github" revision="dsp-dev" />
+  <project path="hardware/libhardware_legacy" name="android-hardware-libhardware-legacy" remote="github" revision="dsp-dev" />
+  <project path="hardware/alsa_sound" name="android-hardware-alsa-sound" remote="github" revision="dsp-dev" />
+  <project path="external/ti-dsp" name="android-external-ti-dsp" remote="github" revision="dsp-dev" />
+  <project path="external/opencore" name="android-external-opencore" remote="github" revision="dsp-dev" />
+  <project path="external/alsa-lib" name="android-external-alsa-lib" remote="github" revision="dsp-dev" />
+  <project path="bionic" name="android-bionic" remote="github" revision="dsp-dev" />
 
   <project path="kernel" name="linux-omap-2.6" remote="isee" revision="linux-2.6.37.y-android" />
   <project path="igep-x-loader" name="igep-x-loader" remote="isee" revision="master" />
-  <project path="device/ti/igep00x0" name="android/vendor-ti-igep00x0" remote="isee" revision="rowboat-ics" />
   <project path="hardware/ti/wlan" name="android/wlan" remote="isee" revision="rowboat-ics"/>
   <project path="external/wpa_supplicant_8" name="android/wpa_supplicant_8" remote="isee" revision="rowboat-ics" />
 
-  <project path="external/alsa-lib" name="external-alsa-lib" revision="rowboat-gingerbread" />
   <project path="external/alsa-utils" name="external-alsa-utils" revision="rowboat-gingerbread"/>
   <project path="abi/cpp" name="abi-cpp" />
-  <project path="bionic" name="bionic" />
   <project path="bootable/bootloader/legacy" name="bootable-bootloader-legacy" />
   <project path="bootable/diskinstaller" name="bootable-diskinstaller" />
   <project path="bootable/recovery" name="bootable-recovery" />
@@ -111,7 +119,6 @@
   <project path="external/nist-sip" name="external-nist-sip" />
   <project path="external/oauth" name="external-oauth" />
   <project path="external/opencv" name="external-opencv" />
-  <project path="external/opencore" name="external-opencore" revision="rowboat-gingerbread-dsp" />
   <project path="external/openssl" name="external-openssl" />
   <project path="external/oprofile" name="external-oprofile" />
   <project path="external/pcre" name="external-pcre" />
@@ -135,7 +142,6 @@
   <project path="external/tagsoup" name="external-tagsoup" />
   <project path="external/tcpdump" name="external-tcpdump" />
   <project path="external/tinyalsa" name="external-tinyalsa" />
-  <project path="external/ti-dsp" name="external-ti-dsp" revision="rowboat-gingerbread-dsp" />
   <project path="external/tinyxml" name="external-tinyxml" />
   <project path="external/tremolo" name="external-tremolo" />
   <project path="external/v8" name="external-v8" />
@@ -160,9 +166,6 @@
   <project path="frameworks/opt/mailcommon" name="frameworks-opt-mailcommon" />
   <project path="frameworks/opt/vcard" name="frameworks-opt-vcard" />
   <project path="frameworks/support" name="frameworks-support" />
-  <project path="hardware/libhardware" name="hardware-libhardware" />
-  <project path="hardware/libhardware_legacy" name="hardware-libhardware_legacy" />
-  <project path="hardware/alsa_sound" name="hardware-alsa_sound" revision="rowboat-gingerbread"/>
   <project path="hardware/ril" name="hardware-ril" />
   <project path="hardware/ti/omap3" name="hardware-ti-omap3" />
   <project path="hardware/ti/sgx" name="hardware-ti-sgx" revision="ti_sgx_sdk-ddk_1.8" />
