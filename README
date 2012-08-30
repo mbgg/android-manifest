@@ -1,0 +1,2 @@
+repo init -u git://github.com/mbgg/android-manifest.git -b master -m manifest.xml
+
