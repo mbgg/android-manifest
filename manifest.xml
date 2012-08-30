@@ -12,7 +12,7 @@
   <default revision="rowboat-ics"
            remote="rowboat" />
 
-  <project path="build" name="android-build" remote="github" revision="master">
+  <project path="build" name="android-build" remote="github" revision="dsp-dev">
     <copyfile src="core/root.mk" dest="Makefile" />
     <copyfile src="README" dest="README" />
   </project>
