@@ -1,0 +1,24 @@
+<manifest>
+  <remote name="notupstream" fetch="git://git.collabora.co.uk/git/user/reynaldo/android" />
+  <remote name="fdo" fetch="git://anongit.freedesktop.org/gstreamer/"/>
+
+  <remove-project name="platform/frameworks/base"/>
+  <project path="frameworks/base" name="frameworks/base-ICS_ITL41F.git" revision="master" remote="notupstream"/>
+
+  <project path="external/gstreamer_aggregate" name="gst/gstreamer_aggregate" revision="ICS_ITL41F" remote="notupstream"/>
+  <project path="external/gstreamer_aggregate/glib" name="deps/glib" revision="android" remote="notupstream"/>
+  <project path="external/gstreamer_aggregate/faad" name="deps/faad" revision="android" remote="notupstream"/>
+  <project path="external/gstreamer_aggregate/ogg" name="deps/ogg" revision="android" remote="notupstream"/>
+  <project path="external/gstreamer_aggregate/libmad" name="deps/libmad" revision="android" remote="notupstream"/>
+  <project path="external/gstreamer_aggregate/x264" name="deps/x264" revision="android" remote="notupstream"/>
+  <project path="external/gstreamer_aggregate/libid3tag" name="deps/libid3tag" revision="android" remote="notupstream"/>
+  <project path="external/gstreamer_aggregate/gstreamer" name="gstreamer" revision="master" remote="fdo"/>
+  <project path="external/gstreamer_aggregate/gst-plugins-base" name="gst-plugins-base" revision="master" remote="fdo"/>
+  <project path="external/gstreamer_aggregate/gst-plugins-good" name="gst-plugins-good" revision="master" remote="fdo"/>
+  <project path="external/gstreamer_aggregate/gst-plugins-bad" name="gst-plugins-bad" revision="master" remote="fdo"/>
+  <project path="external/gstreamer_aggregate/gst-plugins-ugly" name="gst-plugins-ugly" revision="master" remote="fdo"/>
+  <project path="external/gstreamer_aggregate/gst-omx" name="gst-omx" revision="master" remote="fdo"/>
+  <project path="external/gstreamer_aggregate/gnonlin" name="gnonlin" revision="master" remote="fdo"/>
+  <project path="external/gstreamer_aggregate/gst-editing-services" name="gst-editing-services" revision="master" remote="fdo"/>
+  <project path="external/gstreamer_aggregate/gst-android" name="gst-android" revision="master" remote="fdo"/>
+</manifest>
